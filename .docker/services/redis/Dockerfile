@@ -1,4 +1,4 @@
-FROM redis:7-alpine
+FROM redis:7.2-alpine
 
 RUN mkdir -p /run/redis-socket && chmod 777 /run/redis-socket
 COPY ./redis.conf /etc/redis.conf
